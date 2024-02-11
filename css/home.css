@@ -1,0 +1,182 @@
+@import url("acucentro.css");
+
+.imgGrande {
+    background-image: url("../img/fotoLema.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 500px;
+    padding-top: 80px;
+    margin-bottom: 4%;
+}
+
+.imgGrande div{
+
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background-color:  #0606066b;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    color:#FAFAFA;
+}
+
+#lema h1{
+
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+#pedirCita {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    margin-top : 20px;
+    margin-bottom: 4%;
+}
+
+#pedirCita img{
+    width : 70%;
+}
+
+#pedirCita div{
+    display: flex;
+    flex-direction: column;
+    background-color: #8BBE97;
+    color : #FAFAFA;
+    align-items: center;
+    justify-content: center;
+}
+
+#pedirCita div p{
+    line-height: 130%;
+    font-size: 25px;
+    margin:5% 10%;
+    text-align: center;
+}
+
+#irProductos {
+    background-image: url("../img/irpedido.png");
+}
+
+.imgGrande p, h3{
+    text-align: center;
+    margin:3% 0;
+    padding-bottom: 10px;
+}
+
+#tiposAudifonos>div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+  
+}
+
+#tiposAudifonos>div:first-child hr{
+    width:30%;
+    height: 4px;
+    background-color:#BF8C90 ;
+    border: none;
+}
+
+#tiposAudifonos>div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    margin-bottom: 4%;
+    
+}
+
+#tiposAudifonos>div:last-child div{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: #8BBE97;
+    padding: 10px 10px 20px 10px;
+    color: #FAFAFA;
+}
+
+#tiposAudifonos>div:last-child div img{
+    width:90%;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 10px 0 20px 0;
+}
+
+#uneteAcucentro {
+    background-image: url("../img/unete.png");
+}
+
+#uneteAcucentro div{
+    margin-left: 60%;
+}
+
+#ultimaSeccion {
+    margin-bottom: 0;
+    background-image: url("../img/mantenimiento.png");
+}
+
+footer{
+    border: none;
+}
+
+/*Responsive*/
+@media screen and (max-width:1020px){
+
+    h1{
+        font-size: 39px;
+    }
+
+    .imgGrande div{
+        margin:0 auto;
+        width:90%;
+    }
+
+    #uneteAcucentro div {
+        margin: 0 auto;
+    }
+
+    #tiposAudifonos>div:last-child{
+        flex-direction: column;
+        
+
+    }
+
+    #tiposAudifonos>div:last-child div {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    #pedirCita{
+        flex-direction: column;
+        margin-bottom: 30px;
+        height:min-content;
+
+    }
+
+    #pedirCita img {
+        width: 100%;
+
+    }
+
+    #pedirCita div p {
+        font-size: 16px;
+    }
+
+    #pedirCita div{
+        padding-bottom: 20px;
+
+    }
+
+    
+}

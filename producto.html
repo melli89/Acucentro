@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de un producto cualquiera</title>
+    <link rel="stylesheet" href="css/producto.css"/>
+    <script src="js/acucentro.js"></script>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="logo" src="img/logoAcucentro.png" alt="Logo AcuCentro"/></a>
+        <nav>
+            <a href="productos.html">Productos</a>
+            <a href="error404.html">Servicios</a>
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+        <div id="enlacesRegistro">
+            <a href="registro.html">Registrarse</a>
+            <a href="iniciarSesion.html">Iniciar sesión</a>
+        </div>
+    </header>
+    <main>
+        <section id="producto">
+            <img src="img/intracanal.png" alt="Foto audífono" class="foto"/>
+            <div id="datos_producto">
+                <h3>SIGNIA Silk 3Nx</h3>
+                <div id="likes">
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                </div>
+                <p><img src="img/iconoPerdida.png" class="iconos"/>Pérdida: Leve - Moderada</p>
+                <p><img src="img/iconoBluetooth.png" class="iconos"/>Bluetooth: si</p>
+                <p><img src="img/iconoPilas.png" class="iconos"/>Pilas: 312</p>
+                <p><img src="img/iconoColores.png" class="iconos"/>Color: Negro</p>
+            </div>
+        </section>
+        <section id="comentarios">
+            <div id="tituloResena">
+                <h4>Reseñas</h4>
+                <hr>
+            </div>
+            <div id="areaTexto">
+                <h5>Comentar:</h5>
+                <form onsubmit="return comentarProducto()">
+                    <textarea placeholder="Escribe un comentario..." id="areaTexto" required></textarea>
+                    <input type = "submit" class="boton" id = "botonComentario" value="Comentar"/>
+                </form>
+                
+            </div>
+            <div id="headerComentario">
+                <h5>RafaLP</h5>
+                <div id="puntuacion">
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                    <img src="img/Icons.png"/>
+                </div>
+            </div>
+            <p>Buenos audífonos calidad precio, se escucha genial y el diseño me encanta, no le pongo 5 estrellas porque el auricular al estar dentro del oído se ensucia todo el tiempo.</p>
+            <div id="pieComentario">
+                <h5>¿Te ha resultado útil?</h5>
+                <div id="pulgares">
+                    <img onclick="noGusta()"  src="img/manoAbajo.png"  id="pulgarAbajo"/>
+                    <img onclick="gusta()" src="img/manoArriba.png"  id="pulgarArriba"/>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>¿Quiénes somos?</p>
+        <p>Política de provacidad/Condiciones de uso</p>
+        <img src="img/facebook36.png" alt="Icono Facebook"/>
+    </footer>
+</body>

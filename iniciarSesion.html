@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de inicio de sesión</title>
+    <link rel="stylesheet" href="css/inicioSesion.css"/>
+    <script src="js/acucentro.js"></script>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="logo" src="img/logoAcucentro.png" alt="Logo AcuCentro"/></a>
+        <nav>
+            <a href="productos.html">Productos</a>
+            <a href="error404.html">Servicios</a>
+            <a href="contacto.html">Contáctanos</a>
+            <!--<a><img id = "iconoNoche" src="img/iconoNoche.png" onclick="modoOscuro()"/></a>-->
+        </nav>
+        <div id="enlacesRegistro">
+            <a href="registro.html">Registrarse</a>
+            <a href="iniciarSesion.html">Iniciar sesión</a>
+        </div>
+    </header>
+    <main>
+        <h3>Bienvenid@ de nuevo</h3>
+        <h4>Si aún no tienes cuenta <a href="registro.html">regístrate</a></h4>
+        <form onsubmit="return inicio_sesion()">
+            <input id="email" type="text" placeholder="Correro electrónico..."/>
+            <input id = "contrasena1" type="password" placeholder="Contraseña..."/>
+            <input type = "submit" class="boton" value="Iniciar sesión"/>
+        </form>
+    </main>
+    <footer>
+        <p>¿Quiénes somos?</p>
+        <p>Política de provacidad/Condiciones de uso</p>
+        <img src="img/facebook36.png" alt="Icono Facebook"/>
+    </footer>
+</body>

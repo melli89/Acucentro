@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*Bloque que reinicia valores de la página*/
+* {
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+h3{
+font-size: 32px;
+}
+
+header {
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    margin: 30px 5%;
+    border-bottom: 3px solid #BF8C90;
+    padding-bottom: 10px;
+}
+
+#logo {
+    margin: 20px 0 0 0;
+    width:10%;
+    max-width: 200px;
+    min-width: 100px;
+    height: auto;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#enlacesRegistro{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#enlacesRegistro a{
+
+    background-color: #BF8C90;
+    margin: 2%;
+    text-align: center;
+    width: 150px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #FAFAFA;
+}
+
+#enlacesRegistro a:hover{
+
+    background-color: #6A3B3F;
+    color: #FAFAFA;
+}
+
+nav a{
+    margin: 2px 20px;
+    color:#8BBE97;
+    font-size: 25px;
+}
+
+nav a:hover{
+    border-bottom:2px solid #8BBE97;
+    margin-bottom: 0;
+}
+
+
+.boton {
+    background-color: #BF8C90;
+    color: #FAFAFA;
+    width: 150px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+}
+
+.boton:hover{
+    background-color:#6A3B3F;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+    padding: 2% 0;
+    font-weight: bold;
+    border-top: 3px solid #BF8C90;
+    margin:0 5%;
+}
+
+input {
+    width: 80%;
+}
+
+/*Responsive de la página*/
+@media screen and (max-width:1020px){
+    p{
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h4 { font-size: 20px;}
+
+    h3{
+        font-size: 24px;
+    }
+
+    #enlacesRegistro {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        height: min-content;
+        margin: 0;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 20px;     
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,105 @@
+@import url("acucentro.css");
+
+h4 {
+    text-align: center;
+    margin: 3% 0 10px 0;
+}
+
+h4 a{
+    color: blue;
+}
+
+h4 a:hover{
+    text-decoration: underline;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 80px 80px 80px;
+}
+
+#foto {
+    background-image: url("../img/registro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:30%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#foto div h3{
+    padding: 10%;
+    line-height: 1.5em;
+}
+
+#foto div{
+    background-color: rgba(0, 0, 0, 0.464);
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:30%;
+    background-color: #8BBE97;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#apellidos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin:0;
+    width:80%;
+}
+
+#apellidos input:first-child{
+    margin:5px 5px 5px 0;
+}
+
+#apellidos input:last-child{
+    margin:5px 0 5px 5px;
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:40px 0 0 0;
+    width:80%;
+    justify-content: space-evenly;
+}
+
+
+input {
+    padding: 15px 20px;
+    margin: 5px;
+    border: none;
+}
+
+/*Responsive*/
+@media screen and (max-width:1020px){
+    div{
+        flex-direction: column;
+        margin:0;
+    }
+
+    #foto, form{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    form{
+        margin-bottom: 25px;
+    }
+}

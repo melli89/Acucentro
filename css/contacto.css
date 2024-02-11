@@ -1,0 +1,91 @@
+@import url("acucentro.css");
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 7% 25%;
+}
+
+#contenedor_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+}
+
+#info p{
+    margin:10px;
+
+}
+
+.datosCentro{
+    text-align:left;
+}
+
+iframe{
+    margin-left: 5px;
+    width: 40%;
+}
+
+.icono{
+    margin-right: 8px;
+    width: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 8% 20% 0 20%;
+    border: 2px solid #8BBE97;
+    border-radius: 20px;
+    align-items: center;
+}
+
+form h4{
+    margin:10px;
+}
+
+input{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+button{
+    margin-bottom: 10px;
+    border: none;
+}
+
+/*Responsive*/
+@media screen and (max-width:1020px){
+
+    main{
+        margin:10%;
+    }
+
+    #contenedor_info{
+        flex-direction: column;
+    }
+
+    iframe{
+        width:auto;
+  
+    }
+
+    #info{
+        width:auto;
+    }
+
+    form{
+        margin: 10% auto;
+    }
+}

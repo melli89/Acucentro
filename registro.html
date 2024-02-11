@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/registro.css"/>
+    <script src="js/acucentro.js"></script>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img id="logo" src="img/logoAcucentro.png" alt="Logo AcuCentro"/></a>
+        <nav>
+            <a href="productos.html">Productos</a>
+            <a href="error404.html">Servicios</a>
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+        <div id="enlacesRegistro">
+            <a href="registro.html">Registrarse</a>
+            <a href="iniciarSesion.html">Iniciar sesión</a>
+        </div>
+    </header>
+    <main>
+        <h4>Si ya está registrado <a href="iniciarSesion.html">inicie sesión</a></h4>
+        <div>
+            <section id="foto">
+                <div><h3>FORMULARIO DE REGISTRO</h3></div>
+            </section>
+            <form onsubmit="return validar_registro()">
+                <input id="nombreUsuario" type="text" placeholder="Nombre..."/>
+                <div id="apellidos">
+                    <input id="apellido1" type="text" placeholder="Apellido 1..."/>
+                    <input id="apellido2" type="text" placeholder="Apellido 2..."/>
+                </div>
+                <input id="telefono" type="text" placeholder="Teléfono..."/>
+                <input id="email" type="text" placeholder="Correro electrónico..."/>
+                <input id="contrasena1" type="password" placeholder="Contraseña..."/>
+                <input id="contrasena2" type="password" placeholder="Introduzca de nuevo la contraseña..."/>
+                <label id="errorContrasena"></label>
+                <div id="botones">
+                    <input type = "submit" class="boton" value="Registrarse"/>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>¿Quiénes somos?</p>
+        <p>Política de provacidad/Condiciones de uso</p>
+        <img src="img/facebook36.png" alt="Icono Facebook"/>
+    </footer>
+</body>
